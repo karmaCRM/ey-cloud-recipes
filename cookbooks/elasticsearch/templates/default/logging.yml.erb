@@ -4,6 +4,14 @@ logger:
   # log action execution errors for easier debugging
   action : INFO
 
+index_indexing_slow_log_file:
+        type: dailyRollingFile
+        file: ${path.logs}/${cluster.name}_index_indexing_slowlog.log
+        datePattern: "'.'yyyy-MM-dd"
+        layout:
+          type: pattern
+          conversionPattern: "[%d{ISO8601}][%-5p][%-25c] %m%n"
+
 appender:
   console:
     type: console
