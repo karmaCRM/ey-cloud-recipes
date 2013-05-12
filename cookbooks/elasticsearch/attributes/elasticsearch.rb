@@ -1,4 +1,4 @@
-elasticsearch_version("0.20.5")
+elasticsearch_version("0.90.0")
 elasticsearch_checksum("ce1bad39c66b2eb1ec0286aa4c75a03e6d7ac076")
 elasticsearch_clustername("#{@attribute[:environment][:name]}")
 elasticsearch_home("/data/elasticsearch")
