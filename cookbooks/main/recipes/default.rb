@@ -5,3 +5,4 @@ require_recipe "redis-yml"
 require_recipe "resque"
 require_recipe 'resque-scheduler'
 require_recipe 'resque-yml'
+require_recipe 'sidekiq'
